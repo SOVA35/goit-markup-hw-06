@@ -238,18 +238,20 @@ a {
   pointer-events: none;
 }
 .backdrop.is-hidden {
-  opacity: 0;
+  opacity: ;
   pointer-events: none;
 }
 .modal {
   position: absolute;
+  display: inline-block;
+  align-items: center;
   top: 50%;
   left: 50%;
 
   width: 408px;
   height: 576px;
 
-  padding: 15px;
+  padding: 24px;
 
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -267,6 +269,7 @@ a {
   display: block;
   margin-left: auto;
   padding: 8px;
+  margin-bottom: 48px;
 
   width: 24px;
   height: 24px;
@@ -294,6 +297,40 @@ a {
   fill: var(--primary-bg-color);
 }
 
+/*-----------modal form----------*/
+.form-title {
+  color: var(--title-text-color);
+  font-size: 16px;
+  padding-top: px;
+  margin-bottom: 16px;
+}
+.form-fild-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  color: var(--title-text-color);
+}
+.name {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+}
+.phone {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+}
+.email {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+}
+.comments {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+}
 /*------------------features-------------*/
 .features-block {
   margin-bottom: var(--main-large-spase);
