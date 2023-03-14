@@ -298,38 +298,43 @@ a {
 }
 
 /*-----------modal form----------*/
+.form {
+}
 .form-title {
   color: var(--title-text-color);
   font-size: 16px;
   padding-top: px;
   margin-bottom: 16px;
 }
-.form-fild-list {
+.form-group {
   display: flex;
   flex-direction: column;
-  gap: 8px;
 
-  color: var(--title-text-color);
+  color: rgba(142, 143, 153, 1);
+  text-align: left;
 }
-.name {
-  display: block;
-  width: 100%;
-  border-radius: 4px;
+.form-group label {
+  margin-bottom: 4px;
+ ;
 }
-.phone {
-  display: block;
-  width: 100%;
+.form-group input {
+  margin-bottom: 8px;
+  border: 1px solid rgba(46, 47, 66, 1);
   border-radius: 4px;
-}
-.email {
-  display: block;
-  width: 100%;
-  border-radius: 4px;
+  padding: 8px 16px;
 }
 .comments {
-  display: block;
-  width: 100%;
-  border-radius: 4px;
+  padding: 8px 16px;
+}
+.form-group label {
+  color: var(--primery-text-color);
+}
+.form-group .checkbox {
+  border-color: transparent;
+}
+.policy-link {
+  color: var(--accent-color);
+  text-decoration: underline;
 }
 /*------------------features-------------*/
 .features-block {

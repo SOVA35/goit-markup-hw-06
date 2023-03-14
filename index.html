@@ -80,26 +80,40 @@
             <h2 class="form-title">
               Leave your contacts and we will call you back
             </h2>
-            <form>
-              <ul class="form-fild-list list">
-                <li>
-                  <label type="name" name="name" for="name">Name</label>
-                  <input type="name" name="name" id="name" class="name" />
-                </li>
-                <li>
-                  <label type="phone" name="phone" for="phone">Phone</label>
-                  <input type="phone" name="phone" id="phone" class="phone" />
-                </li>
-                <li>
-                  <label type="name" name="name" for="name">Email</label>
-                  <input type="name" name="name" id="name" class="email" />
-                </li>
-                <li>
-                  <label type="name" name="name" for="name">Comment</label>
-                  <textarea class="comments"></textarea>
-                </li>
-              </ul>
+            <form class="form">
+              <div class="form-group">
+                <label type="name" name="name" for="name">Name</label>
+                <input type="name" name="name" id="name" class="name" />
+              </div>
+
+              <div class="form-group">
+                <label type="phone" name="phone" for="phone">Phone</label>
+                <input type="phone" name="phone" id="phone" class="phone" />
+              </div>
+
+              <div class="form-group">
+                <label type="email" name="email" for="email">Email</label>
+                <input type="email" name="email" id="email" class="email" />
+              </div>
             </form>
+            <div class="form-group">
+              <label>Comment</label>
+              <textarea
+                class="comments"
+                placeholder="Text input"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label>
+                I accept the terms and conditions of the
+                <a href="#" class="policy-link"><span class="">Privacy Policy</span></a>
+                <input type="checkbox" name="policy" class="checkbox" />
+                <svg>
+                  <use href="./images/form-icon/symbol-defs.svg#" ></use>
+                </svg>
+              </label>
+            </div>
           </div>
         </div>
       </section>
