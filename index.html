@@ -15,6 +15,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desctop.css" />
   </head>
   <body>
     <header class="page-hader">
@@ -36,6 +39,23 @@
                 <a href="#" class="navbar-link">Contacts</a>
               </li>
             </ul>
+            <button type="button" class="burger-btn is-open" data-menu-button>
+              <svg
+                class="burger"
+                width="20"
+                height="20"
+                aria-label="mobile menu button"
+              >
+                <use
+                  class="icon-menu"
+                  href="./images/form-icon/symbol-defs.svg#icon-burger"
+                ></use>
+                <use
+                  class="icon-cross"
+                  href="./images/social_links/symbol-defs.svg#icon-close-icon"
+                ></use>
+              </svg>
+            </button>
           </nav>
 
           <address class="address">
@@ -199,7 +219,6 @@
             </li>
             <li class="features-list technologies list">
               <h3 class="features-title title">Technologies</h3>
-
               <p class="features-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -246,7 +265,7 @@
       <!--team-->
 
       <section class="team">
-        <div class="container">
+        <div class="container container-team">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-block item">
@@ -615,5 +634,8 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script>
+      src = "./js/mobile.js";
+    </script>
   </body>
 </html>
