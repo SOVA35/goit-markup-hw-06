@@ -3,20 +3,12 @@
     max-width: 428px;
   }
 
-  .hero-page {
-    margin-bottom: 102px;
-    padding: 112px 39px;
-  }
-
   .form {
     max-width: 392px;
     margin: 0;
     padding: 0;
   }
 
-  .team {
-    padding: 0;
-  }
   .team-title {
     font-weight: 700;
   }
@@ -40,7 +32,6 @@
   .features-block {
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 96px;
     margin: 0;
   }
 
@@ -54,6 +45,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .hero-page {
+    padding: 112px 39px;
+  }
   .header-section {
     display: block;
   }
@@ -69,8 +63,6 @@
   }
 
   .nav-block {
-    padding-top: 24px;
-    padding-bottom: 24px;
     display: flex;
     justify-content: space-between;
   }
@@ -78,13 +70,21 @@
   .work-section {
     display: none;
   }
+  .team {
+    padding-top: 96px;
+    padding-bottom: 0;
+  }
   .team-list {
     display: flex;
     flex-direction: column;
     gap: 72px;
   }
   .container-team {
-    padding: 96px 82px;
+    padding: 0 82px 96px;
+  }
+  .customer-block {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .customer-list {
     display: flex;
@@ -107,9 +107,7 @@
     flex-direction: column;
     gap: 72px;
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 102px;
+    padding: 96px 15px;
   }
   .features-title {
     color: rgba(46, 47, 66, 1);
@@ -118,6 +116,7 @@
     text-align: center;
     margin-bottom: 8px;
   }
+
   .footer-block {
     display: block;
   }
