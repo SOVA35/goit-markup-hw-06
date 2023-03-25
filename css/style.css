@@ -29,7 +29,7 @@
 }
 
 /*------------global-----------------*/
- 
+
 body {
   color: var(--primery-text-color);
   font-family: "Roboto", sans-serif;
@@ -69,7 +69,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
- 
 }
 a {
   text-decoration: none;
@@ -78,7 +77,6 @@ a {
 
 /*---header----*/
 .page-hader {
-  padding: var(--main-small-space);
   border-bottom: 1px solid var(--button-border-color);
 }
 .header-section {
@@ -86,7 +84,7 @@ a {
 }
 
 /*-------------block nav-----------*/
-/* .burger-btn {
+.burger-btn {
   border-color: transparent;
   background-color: transparent;
   padding: 0;
@@ -101,10 +99,10 @@ a {
   outline: none;
   width: 30px;
   height: 19px;
-} */
+}
 
 /*-------------logo----------------*/
-/* .logo {
+.logo {
   color: var(--title-text-color);
   font-family: Raleway;
   font-weight: 800;
@@ -161,10 +159,10 @@ a {
   background-color: var(--accent-color-hover);
 
   border-radius: 2px;
-} */
+}
 
 /*-----------address block----------*/
-/* .address {
+.address {
   margin-left: auto;
 }
 .address-block {
@@ -186,11 +184,12 @@ a {
 .contacts-tel:hover,
 .contacts-tel:focus {
   color: var(--accent-color-hover);
-} */
+}
+*/
 /*-------------block nav-----------*/
 
 /*------------------hero block--------*/
-/* .hero-page {
+ .hero-page {
   color: var(--secodary-text-color);
   max-width: 1440px;
 
@@ -242,8 +241,8 @@ a {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--accent-color-hover);
-} */
-.backdrop {
+}
+ .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -318,7 +317,7 @@ a {
 }
 
 /*-----------modal form----------*/
-/* .form {
+ .form {
   margin: 0;
   padding: 0;
 }
@@ -465,7 +464,7 @@ input:focus + .input-icon {
 .modal-form-btn:focus {
   background-color: var(--accent-color-hover);
   transition: 0.25s linear;
-} */
+} 
 /*------------------features-------------*/
 /* .features-block {
   margin-bottom: var(--main-large-spase);
