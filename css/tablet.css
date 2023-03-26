@@ -5,6 +5,9 @@
   .burger-btn {
     display: none;
   }
+   .close-mobile-menu{
+    display: none;
+   }
 
   .address-block {
     display: flex;
