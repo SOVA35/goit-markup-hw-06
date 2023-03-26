@@ -24,54 +24,103 @@
       <!--navigation-->
       <div class="container">
         <div class="header-section">
-          <nav class="nav-block">
-            <a href="./index.html" class="logo"
-              ><span class="logo-part">Web</span>Studio</a
-            >
-            <ul class="navbar">
-              <li class="navbar-list item list">
-                <a href="./index.html" class="navbar-link current">Studio</a>
-              </li>
-              <li class="navbar-list item list">
-                <a href="./portfolio.html" class="navbar-link">Portfolio</a>
-              </li>
-              <li class="navbar-list item list">
-                <a href="#" class="navbar-link">Contacts</a>
-              </li>
-            </ul>
-            <button type="button" class="burger-btn is-open" data-menu-button>
-              <svg
-                class="burger"
-                width="20"
-                height="20"
-                aria-label="mobile menu button"
-              >
-                <use
-                  class="icon-menu"
-                  href="./images/form-icon/symbol-defs.svg#icon-burger"
-                ></use>
-                <use
-                  class="icon-cross"
-                  href="./images/social_links/symbol-defs.svg#icon-close-icon"
-                ></use>
-              </svg>
-            </button>
-          </nav>
+          <a href="./index.html" class="logo"
+            ><span class="logo-part">Web</span>Studio</a
+          ><button data-menu-button type="button" class="burger-btn">
+            <svg class="burger" aria-label="mobile menu button">
+              <use
+                class="icon-menu js-open-menu"
+                href="./images/form-icon/symbol-defs.svg#icon-burger"
+              ></use>
+              <use
+                class="icon-cross js-close-menu"
+                href="./images/social_links/symbol-defs.svg#icon-close-icon"
+              ></use>
+            </svg>
+          </button>
+          <div class="container-menu is-open">
+            <div class="container-nav">
+              <button  class="close-mobile-menu" type="button">
+                <svg class="close-icon">
+                  <use
+                    href="./images/social_links/symbol-defs.svg#icon-close-icon"
+                  ></use>
+                </svg>
+              </button>
+              <nav class="nav-block">
+                <ul class="navbar">
+                  <li class="navbar-list item list">
+                    <a href="./index.html" class="navbar-link current"
+                      >Studio</a
+                    >
+                  </li>
+                  <li class="navbar-list item list">
+                    <a href="./portfolio.html" class="navbar-link">Portfolio</a>
+                  </li>
+                  <li class="navbar-list item list">
+                    <a href="#" class="navbar-link">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
 
-          <address class="address">
-            <ul class="address-block">
-              <li class="contacts-list item list">
-                <a href="mailto:info@devstudio.com" class="contacts-mail"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="contacts-list item list">
-                <a href="tel:+110001111111" class="contacts-tel"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </address>
+            <div class="container-address">
+              <address class="address">
+                <ul class="address-block">
+                  <li class="contacts-list item list">
+                    <a href="mailto:info@devstudio.com" class="contacts-mail"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="contacts-list item list">
+                    <a href="tel:+110001111111" class="contacts-tel"
+                      >+11 (000) 111-11-11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="mobil-menu-link">
+              <ul class="personal-links list">
+                    <li class="personal-item">
+                      <a href="#" class="personal-link">
+                        <svg class="personal_media-icon">
+                          <use
+                            href="./images/social_links/symbol-defs.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="personal-item">
+                      <a href="#" class="personal-link">
+                        <svg class="personal_media-icon">
+                          <use
+                            href="./images/social_links/symbol-defs.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="personal-item">
+                      <a href="#" class="personal-link">
+                        <svg class="personal_media-icon">
+                          <use
+                            href="./images/social_links/symbol-defs.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="personal-item">
+                      <a href="#" class="personal-link">
+                        <svg class="personal_media-icon">
+                          <use
+                            href="./images/social_links/symbol-defs.svg#icon-linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -634,8 +683,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <script>
-      src = "./js/mobile.js";
-    </script>
+    <script src="./js/mobile.js"></script>
   </body>
 </html>
