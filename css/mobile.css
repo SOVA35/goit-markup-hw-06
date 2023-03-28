@@ -3,10 +3,6 @@
     max-width: 428px;
   }
 
-  .nav-block {
-    display: block;
-    transition: none;
-  }
   .form {
     max-width: 392px;
     margin: 0;
@@ -28,11 +24,7 @@
     margin-bottom: 8px;
   }
 
-  .features-block {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0;
-  }
+ 
 
   .customer-block {
     padding-top: 96px;
@@ -46,9 +38,14 @@
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hero-page {
     padding: 112px 39px;
+    margin-bottom: 0;
+  }
+  .nav-block {
+    display: block;
+    transition: none;
   }
   .modal {
     max-width: 392px;
@@ -70,6 +67,9 @@
 
   .work-section {
     display: none;
+  }
+   .features-block {
+    margin-bottom: 0;
   }
   .features-list::before {
     position: absolute;
@@ -118,6 +118,14 @@
     width: 100%;
     padding: 96px 15px;
   }
+  .footer-block {
+    width: 100%;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-bottom: 0;
+  }
   .features-title {
     color: rgba(46, 47, 66, 1);
     font-weight: 700;
@@ -125,10 +133,9 @@
     text-align: center;
     margin-bottom: 8px;
   }
-
-  .footer-block {
-    width: 100%;
-    display: block;
+  .features-list::before {
+    position: absolute;
+    display: none;
   }
 
   .footer {
@@ -196,65 +203,87 @@
   .container-menu {
     display: none;
     position: absolute;
+
     top: 0;
     left: 0;
-    padding: 24px 24px 40px 40px;
+    padding: 24px 24px 35px 40px;
     width: 100%;
-    height: 796px;
-    outline: 1px solid teal;
     background-color: var(--primary-bg-color);
+    z-index: 1;
   }
   .container-menu.is-open {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .container-menu.is-open .navbar {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: first baseline baseline;
+    margin-left: 0;
+    margin-bottom: 284px;
   }
   .container-menu.is-open .address {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
   }
-  .close-mobile-menu {
-    display: block;
-    margin-left: auto;
-    padding: 8px;
-    margin-bottom: 32px;
-
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: rgba(231, 233, 252, 1);
-    cursor: pointer;
-    transition: 0.25s linear;
+  .container-menu.is-open .address-block {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+    margin-bottom: 48px;
   }
-  .current::after {
-    display: none;
-  }
+}
+.container-menu.is-open .navbar-link {
+  font-size: 36px;
+  font-weight: 700;
+}
+.container-menu.is-open .navbar-link:hover {
+  color: var(--accent-color-hover);
+}
+.container-menu.is-open .contacts-tel {
+  width: 100%;
+  font-size: 36px;
+  font-weight: 700;
+}
+.close-mobile-menu {
+  display: block;
+  margin-left: auto;
+  padding: 8px;
+  margin-bottom: 32px;
 
- 
-  .hero-page {
-    color: var(--secodary-text-color);
-    max-width: 1440px;
-    text-align: center;
-    content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(231, 233, 252, 1);
+  cursor: pointer;
+  transition: 0.25s linear;
+}
+.current::after {
+  display: none;
+}
 
-    background-color: var(--primery-text-color);
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/background/people-office\ 1.jpg);
+.hero-page {
+  color: var(--secodary-text-color);
+  max-width: 1440px;
+  text-align: center;
+  content: "";
 
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
+  background-color: var(--primery-text-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/background/people-office\ 1.jpg);
 
-  .hero-title {
-    font-size: 36px;
-    margin-bottom: 72px;
-  }
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.hero-title {
+  font-size: 36px;
+  margin-bottom: 72px;
 }
