@@ -250,10 +250,14 @@
   font-size: 36px;
   font-weight: 700;
 }
+.container-menu.is-open .mobil-menu-link{
+  margin-right: 36px;
+}
 .container-menu.is-open .personal-links {
   display: flex;
   max-width: 100%;
   justify-content: space-between;
+ 
 }
 .close-mobile-menu {
   display: block;
