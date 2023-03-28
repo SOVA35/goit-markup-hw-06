@@ -2,18 +2,23 @@
   .container {
     max-width: 736px;
   }
-.page-header {
-  display: block;
-}
+  .container-nav{
+    display: block;
+  }
+  
+  .page-header {
+    display: block;
+    
+  }
   .burger-btn {
     display: none;
   }
-   .close-mobile-menu{
+  .close-mobile-menu {
     display: none;
-   }
-   .mobile-menu{
+  }
+  .mobile-menu {
     display: none;
-   }
+  }
 
   .address-block {
     display: flex;
