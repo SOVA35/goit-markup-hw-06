@@ -1,7 +1,11 @@
 @media screen and (min-width: 480px) {
   .container {
     max-width: 428px;
-    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .container-menu{
+    display: block;
   }
 
   .form {
@@ -42,16 +46,14 @@
     padding: 112px 39px;
     margin-bottom: 0;
   }
-  .nav-block {
-    display: block;
-    transition: none;
-  }
+
   .modal {
     max-width: 392px;
   }
   .header-section {
     position: relative;
-    padding: 24px 15px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     display: flex;
     justify-content: space-between;
   }
@@ -237,11 +239,23 @@
   }
   .container-menu.is-open .address-block {
     display: flex;
-    flex-direction: column-reverse;
+    flex-wrap: wrap;
     gap: 40px;
     margin-bottom: 48px;
   }
+  .buttons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .portfolio-block{
+    margin-bottom: 48px ;
+  }
+  .portfolio-list {
+   width: 396px;
+  }
 }
+
 .container-menu.is-open .navbar-link {
   font-size: 36px;
   font-weight: 700;
@@ -289,8 +303,7 @@
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background/people-office\ 1.jpg);
-
+    url(../images/images/mobile/bg/ofice-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -299,4 +312,15 @@
 .hero-title {
   font-size: 36px;
   margin-bottom: 72px;
+}
+@media screen and (min-device--pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero-page {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/images/mobile/bg/hero-bg-mobile@2x.jpg);
+  }
 }
