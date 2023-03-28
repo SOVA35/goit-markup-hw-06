@@ -2,10 +2,16 @@
   .container {
     max-width: 736px;
   }
+.page-header {
+  display: block;
+}
   .burger-btn {
     display: none;
   }
    .close-mobile-menu{
+    display: none;
+   }
+   .mobile-menu{
     display: none;
    }
 
