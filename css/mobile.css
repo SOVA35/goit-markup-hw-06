@@ -1,6 +1,7 @@
 @media screen and (min-width: 480px) {
   .container {
     max-width: 428px;
+    padding: 0;
   }
 
   .form {
@@ -23,8 +24,6 @@
     text-align: center;
     margin-bottom: 8px;
   }
-
- 
 
   .customer-block {
     padding-top: 96px;
@@ -52,8 +51,7 @@
   }
   .header-section {
     position: relative;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 15px;
     display: flex;
     justify-content: space-between;
   }
@@ -68,7 +66,7 @@
   .work-section {
     display: none;
   }
-   .features-block {
+  .features-block {
     margin-bottom: 0;
   }
   .features-list::before {
@@ -89,6 +87,12 @@
   }
   .team-image {
     width: 100%;
+  }
+  .personal-links {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    gap: unset;
   }
 
   .customer-block {
@@ -211,16 +215,17 @@
     background-color: var(--primary-bg-color);
     z-index: 1;
   }
+
   .container-menu.is-open {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
+
   .container-menu.is-open .navbar {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
-    align-items: first baseline baseline;
     margin-left: 0;
     margin-bottom: 284px;
   }
@@ -239,13 +244,16 @@
   font-size: 36px;
   font-weight: 700;
 }
-.container-menu.is-open .navbar-link:hover {
-  color: var(--accent-color-hover);
-}
+
 .container-menu.is-open .contacts-tel {
-  width: 100%;
+  max-width: 100%;
   font-size: 36px;
   font-weight: 700;
+}
+.container-menu.is-open .personal-links {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
 }
 .close-mobile-menu {
   display: block;
