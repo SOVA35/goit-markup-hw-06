@@ -26,21 +26,26 @@
         <div class="header-section">
           <a href="./index.html" class="logo"
             ><span class="logo-part">Web</span>Studio</a
-          ><button data-menu-button type="button" class="burger-btn">
+          >
+          <button
+            data-menu-button
+            type="button"
+            class="burger-btn js-open-menu"
+          >
             <svg class="burger" aria-label="mobile menu button">
               <use
-                class="icon-menu js-open-menu"
+                class="icon-menu"
                 href="./images/form-icon/symbol-defs.svg#icon-burger"
               ></use>
               <use
-                class="icon-cross js-close-menu"
+                class="icon-cross"
                 href="./images/social_links/symbol-defs.svg#icon-close-icon"
               ></use>
             </svg>
           </button>
-          <div class="container-menu is-open">
+          <div class="container-menu js-menu-container">
             <div class="container-nav">
-              <button  class="close-mobile-menu" type="button">
+              <button class="close-mobile-menu js-close-menu" type="button">
                 <svg class="close-icon">
                   <use
                     href="./images/social_links/symbol-defs.svg#icon-close-icon"
@@ -55,15 +60,14 @@
                     >
                   </li>
                   <li class="navbar-list item list">
-                    <a href="./portfolio.html" class="navbar-link">Portfolio</a>
+                    <a href="./portfolio.html" class="navbar-link current">Portfolio</a>
                   </li>
                   <li class="navbar-list item list">
-                    <a href="#" class="navbar-link">Contacts</a>
+                    <a href="#" class="navbar-link current">Contacts</a>
                   </li>
                 </ul>
               </nav>
             </div>
-
             <div class="container-address">
               <address class="address">
                 <ul class="address-block">
@@ -82,47 +86,48 @@
             </div>
             <div class="mobil-menu-link">
               <ul class="personal-links list">
-                    <li class="personal-item">
-                      <a href="#" class="personal-link">
-                        <svg class="personal_media-icon">
-                          <use
-                            href="./images/social_links/symbol-defs.svg#icon-instagram"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="personal-item">
-                      <a href="#" class="personal-link">
-                        <svg class="personal_media-icon">
-                          <use
-                            href="./images/social_links/symbol-defs.svg#icon-twitter"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="personal-item">
-                      <a href="#" class="personal-link">
-                        <svg class="personal_media-icon">
-                          <use
-                            href="./images/social_links/symbol-defs.svg#icon-facebook"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="personal-item">
-                      <a href="#" class="personal-link">
-                        <svg class="personal_media-icon">
-                          <use
-                            href="./images/social_links/symbol-defs.svg#icon-linkedin"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
+                <li class="personal-item">
+                  <a href="#" class="personal-link">
+                    <svg class="personal_media-icon">
+                      <use
+                        href="./images/social_links/symbol-defs.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="personal-item">
+                  <a href="#" class="personal-link">
+                    <svg class="personal_media-icon">
+                      <use
+                        href="./images/social_links/symbol-defs.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="personal-item">
+                  <a href="#" class="personal-link">
+                    <svg class="personal_media-icon">
+                      <use
+                        href="./images/social_links/symbol-defs.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="personal-item">
+                  <a href="#" class="personal-link">
+                    <svg class="personal_media-icon">
+                      <use
+                        href="./images/social_links/symbol-defs.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+
     </header>
 
     <!--main informarion, hero-->
