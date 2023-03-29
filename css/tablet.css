@@ -98,7 +98,7 @@
     transform: translate(-50%, -50%) scale(0);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1128px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .address-block {
     display: flex;
     flex-direction: column;
