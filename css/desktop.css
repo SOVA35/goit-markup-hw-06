@@ -48,6 +48,9 @@
     display: inline-block;
     width: 100%;
   }
+  .work-section {
+    display: block;
+  }
 }
 
 @media screen and (min-device--pixel-ratio: 2) and (min-width: 1200px),
