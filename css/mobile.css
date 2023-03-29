@@ -115,7 +115,7 @@
     width: 100%;
     padding: 96px 15px;
   }
- 
+
   .footer-block {
     width: 100%;
     display: block;
@@ -250,7 +250,8 @@
   }
 
   .container-menu.is-open .contacts-tel {
-    max-width: 100%;
+    display: block;
+    width: 100vh;
     font-size: 36px;
     font-weight: 700;
   }
@@ -284,7 +285,7 @@
   .work-section {
     display: none;
   }
-   .features-list::before {
+  .features-list::before {
     display: none;
   }
 }
