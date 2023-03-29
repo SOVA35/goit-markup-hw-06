@@ -58,11 +58,11 @@ p {
   margin: 0;
 }
 
-.container {
+/* .container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-}
+} */
 img {
   display: block;
   max-width: 100%;
@@ -121,7 +121,6 @@ a {
 
 .nav-block {
   display: flex;
-  transition: color 0, 5s linear;
 }
 
 .navbar {
@@ -474,6 +473,7 @@ input:focus + .input-icon {
 .features {
   display: flex;
   gap: var(--main-small-space);
+  justify-content: center;
 }
 
 .features-title {
@@ -481,7 +481,7 @@ input:focus + .input-icon {
 }
 
 .features-text {
-  min-width: 264px;
+  max-width: 100%;
   text-align: left;
 }
 .features-list::before {
@@ -535,14 +535,15 @@ input:focus + .input-icon {
 */
 
 /*---------------------team---------------*/
+
 .team {
   align-content: center;
   margin-right: auto;
   margin-left: auto;
   padding-top: var(--main-large-spase);
   padding-bottom: var(--main-large-spase);
-  background-color: var(--button-main-color);
 }
+
 .team-title {
   color: var(--title-text-color);
   font-size: 36px;
